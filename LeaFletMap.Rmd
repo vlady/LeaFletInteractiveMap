@@ -1,0 +1,19 @@
+---
+title: "LeafletMap"
+author: "Vlad Dumitriu"
+date: "4/17/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+``` {r}
+library(leaflet)
+
+my_map <- leaflet() %>%
+  addTiles() %>%
+  addMarkers(lat=47.6205, lng = -122.3493, popup = "Space Needle Seattle")
+my_map
+```
